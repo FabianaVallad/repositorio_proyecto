@@ -66,7 +66,8 @@ function encriptar() {
             if (letraOri == arrALFA[j]) {
                 //calculamos el indice auxiliar (sumamos el valor de j mas el numero de desplazamientos) segun encriptacion cesar
                 indiceAux = j + numeroDes;
-                //si el indice es mayor o igual al tamaño del abcedario, es decir que el indice auxiliar es no se encomtraria en el arreglo del abecedario
+                //si el indice es mayor o igual al tamaño del abcedario, es decir que el indice auxiliar no se encomtraria en el arreglo del abecedario
+                
                 if (indiceAux >= arrALFA.length) {
                     //obtenemos la letra encriptaba con el residuo de indiceAux entre el tamaño del arreglo del abecedario
                     letraEnc = arrALFA[indiceAux % arrALFA.length];
